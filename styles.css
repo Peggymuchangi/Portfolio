@@ -299,17 +299,39 @@ h2 {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .card {
-  padding: 1.3rem;
+  padding: 1.6rem;
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-3px);
   border-color: rgba(103, 232, 249, 0.2);
+}
+
+.project-summary {
+  color: var(--text);
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.project-details p {
+  margin: 0.85rem 0;
+  color: var(--muted);
+}
+
+.project-details ul {
+  margin: 0.75rem 0 0 1rem;
+  color: var(--text);
+}
+
+.project-details ul li {
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
 }
 
 .card ul {
